@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+</head>
+<body>
+    <script>
+        // Define the biodata details using const and let
+        const name = "John Doe";
+        const email = "john.doe@example.com";
+        const city = "New York";
+        const education = "Bachelor of Science in Computer Science";
+        const occupation = "Software Developer";
+        const phoneNumber = "+1234567890";
+        const instituteName = "XYZ University";
+
+        const biodata = `
+            <h1>Biodata</h1>
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>City:</strong> ${city}</p>
+            <p><strong>Education:</strong> ${education}</p>
+            <p><strong>Occupation:</strong> ${occupation}</p>
+            <p><strong>Phone Number:</strong> ${phoneNumber}</p>
+            <p><strong>Institute Name:</strong> ${instituteName}</p>
+        `;
+
+        // Output the biodata to the document
+        document.write(biodata);
+
+   // Define constants for the marks of different subjects
+   const marksMath = 85;
+        const marksScience = 90;
+        const marksEnglish = 78;
+        const marksHistory = 82;
+        const marksGeography = 88;
+
+        // Calculate the total marks
+        const totalMarks = marksMath + marksScience + marksEnglish + marksHistory + marksGeography;
+
+        // Calculate the percentage
+        const maxMarks = 500; // Assuming each subject is out of 100
+        const percentage = (totalMarks / maxMarks) * 100;
+
+        // Determine the grade based on the percentage
+        let grade;
+        if (percentage >= 90) {
+            grade = 'A';
+        } else if (percentage >= 80) {
+            grade = 'B';
+        } else if (percentage >= 70) {
+            grade = 'C';
+        } else if (percentage >= 60) {
+            grade = 'D';
+        } else {
+            grade = 'F';
+        }
+
+        // Create the mark sheet using template literals
+        const markSheet = `
+            <h1>Mark Sheet</h1>
+            <p><strong>Mathematics:</strong> ${marksMath}</p>
+            <p><strong>Science:</strong> ${marksScience}</p>
+            <p><strong>English:</strong> ${marksEnglish}</p>
+            <p><strong>History:</strong> ${marksHistory}</p>
+            <p><strong>Geography:</strong> ${marksGeography}</p>
+            <p><strong>Total Marks:</strong> ${totalMarks}</p>
+            <p><strong>Percentage:</strong> ${percentage.toFixed(2)}%</p>
+            <p><strong>Grade:</strong> ${grade}</p>
+        `;
+
+        // Output the mark sheet to the document
+        document.write(markSheet);
+
+
+
+
+     </script>
+// </body>
+// </html>
